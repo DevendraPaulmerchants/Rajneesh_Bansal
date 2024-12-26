@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Rajneesh Bansal</title>
+    <Style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            margin: 2rem 0;
+        }
+
+        .name-and-position-container {
+            background: #f2f2f2;
+            padding: 1rem;
+        }
+
+        .company-address {
+            padding: 1rem;
+        }
+
+        .company-address h2 {
+            color: #6d6868;
+            font-size: 18px;
+            font-weight: 500;
+        }
+
+        .company-address h2 span {
+            color: #050505;
+            font-size: 20px;
+        }
+
+        .name-and-position-container h2 {
+            color: #797473;
+            font-size: 24px;
+            font-weight: 400;
+        }
+
+        .name-and-position-container h2 span {
+            color: #050505;
+            font-weight: 500;
+        }
+
+        .contact-details-container {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            padding: 0 1rem 10px;
+        }
+
+        .contact-icon {
+            background: #deeaf6;
+            padding: 8px 10px;
+            border-radius: 50%;
+            width: fit-content;
+        }
+
+        .contact-text a {
+            text-decoration: none;
+            color: #1c1c1c;
+        }
+
+        #alt-phone {
+            transform: rotate(90deg);
+        }
+
+        .company-logo {
+            padding: 1rem;
+        }
+
+        .add-to-contact {
+            padding: 1rem;
+        }
+
+        .add-to-contact button {
+            outline: none;
+            border: none;
+            background: #277ac9;
+            padding: 10px;
+            border-radius: 20px;
+            color: #fff;
+            width: 100%;
+            cursor: pointer;
+        }
+    </Style>
+</head>
+
+<body>
+    <div class="name-and-position-container">
+        <h2>Managing Director, <span>Rajneesh Bansal</span></h2>
+    </div>
+    <div class="company-address">
+        <h2>Paul Merchants Ltd.</h2>
+        <h2><span>Corp. Office:</span> PML House, SCO 829-830,</h2>
+        <h2>Sector 22-A, Chandigarh 160022</h2>
+    </div>
+    <div class="contact-details-container">
+        <div class="contact-icon">
+            <i class="fa fa-phone" style="color:#277ac9;"></i>
+        </div>
+        <div class="contact-text">
+            <a href="tel:+919317733333">+91-93177-33333</a>
+        </div>
+    </div>
+    <div class="contact-details-container">
+        <div class="contact-icon">
+            <i class='fa fa-phone' id="alt-phone" style="color:#277ac9;"></i>
+        </div>
+        <div class="contact-text">
+            <a href="tel:01725041713">0172-5041713</a>
+        </div>
+    </div>
+    <div class="contact-details-container">
+        <div class="contact-icon">
+            <i class="fa fa-envelope" style="color:#277ac9;"></i>
+        </div>
+        <div class="contact-text">
+            <a href="mailto:rajneesh@paulmerchants.net">rajneesh@paulmerchants.net</a>
+        </div>
+    </div>
+    <div class="contact-details-container">
+        <div class="contact-icon">
+            <i class="fa fa-globe" style="color:#277ac9;"></i>
+        </div>
+        <div class="contact-text">
+            <a href="https://www.paulmerchants.net/" target="_blank">www.paulmerchants.net</a>
+        </div>
+    </div>
+    <div class="company-logo">
+        <img src="https://pml-revamp.s3.ap-south-1.amazonaws.com/image001+(1).png" alt="Paul Merchants" />
+    </div>
+    <div class="add-to-contact">
+        <a href="contact.vcf" download="Contact.vcf">
+            <button>+ Add to Contacts</button>
+        </a>
+    </div>    
+</body>
+
+</html>
