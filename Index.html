@@ -138,10 +138,27 @@
         <img src="https://pml-revamp.s3.ap-south-1.amazonaws.com/image001+(1).png" alt="Paul Merchants" />
     </div>
     <div class="add-to-contact">
-        <a href="contact.vcf" download="Contact.vcf">
-            <button>+ Add to Contacts</button>
-        </a>
+            <button id="saveContactBtn">+ Add to Contacts</button>
     </div>    
+    <script>
+        document.getElementById('saveContactBtn').addEventListener('click', function() {
+            var phoneNumber = '+919317733333';
+            var contactName = 'Rajneesh Bansal';
+    
+            // Create a VCard string
+            var vCardData = 'BEGIN:VCARD\nVERSION:3.0\nFN:' + contactName + '\nTEL:' + phoneNumber + '\nEND:VCARD';
+    
+            // Create a Blob from the VCard data
+            var blob = new Blob([vCardData], { type: 'text/vcard' });
+    
+            // Create a download link for the VCard
+            var link = document.createElement('a');
+            link.href = window.URL.createObjectURL(blob);
+            link.download = 'contact.vcf';
+            link.click();
+        });
+    </script>
+    
 </body>
 
 </html>
